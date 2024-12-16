@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موقع بتقنية الواقع المعزز</title>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1em;
+        }
+        section {
+            padding: 2em;
+        }
+        .ar-container {
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>مرحبًا في موقعنا التفاعلي</h1>
+        <p>استمتع بتجربة الواقع المعزز مباشرة!</p>
+    </header>
+
+    <section>
+        <h2>تجربة الواقع المعزز (AR)</h2>
+        <p>انقر على المشهد أدناه لمشاهدة العناصر الافتراضية بتقنية الواقع المعزز.</p>
+        <div class="ar-container">
+            <a-scene embedded arjs>
+                <a-marker preset="hiro">
+                    <a-box position="0 0.5 0" material="color: red;"></a-box>
+                </a-marker>
+                <a-entity camera></a-entity>
+            </a-scene>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 موقع بتقنية الواقع المعزز</p>
+    </footer>
+</body>
+</html>
